@@ -1,4 +1,4 @@
-require_relative "./main.rb"
+require_relative "../main.rb"
 require "test/unit"
 
 class TestWelcome < Test::Unit::TestCase
