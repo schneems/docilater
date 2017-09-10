@@ -1,4 +1,5 @@
 require "awesome_print"
+require "progress_bar"
 
 def start
 	puts "What's your name? "
