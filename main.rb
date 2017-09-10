@@ -25,7 +25,9 @@ end
 def start
 	puts "What's your name? "
 	puts GetWelcome(gets)
-	startLoop(getFunctions())
+	puts "Enter the name of your Ruby file: "
+	contents = File.open(gets)
+	startLoop(getFunctions(contents))
 end
 
 def GetWelcome(name)
