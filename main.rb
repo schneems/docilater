@@ -1,9 +1,31 @@
 require "awesome_print"
 require "progress_bar"
 
+def doFunction(function)
+	# not implemented
+end
+
+def startLoop(functions)
+	bar = ProgressBar.new(functions.length)
+	functions.length.times do |i|
+		doFunction(functions[i])
+		bar.increment!
+	end
+end
+
+def getFunctions(code)
+	functions = []
+	words = code.split(" ")
+	words.length.times do |i|
+		if words[i] == "def"
+			functions << words[i + 1]
+		end
+end
+
 def start
 	puts "What's your name? "
 	puts GetWelcome(gets)
+	startLoop(getFunctions())
 end
 
 def GetWelcome(name)
