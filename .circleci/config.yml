@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  test:
+    working_directory: /tmp/docilater/
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: sudo gem install bundler
+      - run: bundler install
+      - run: ruby tests/doall.rb
+workflows:
+  version: 2
+  test:
+    - test
