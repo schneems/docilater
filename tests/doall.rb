@@ -1,2 +1,2 @@
 require "test/unit"
-require "welcome"
+require_relative "welcome.rb"
