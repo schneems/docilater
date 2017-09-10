@@ -1,2 +1,2 @@
-# docilater
-Creates code documentation for you
+# Docilater
+Creates code documentation for you.
