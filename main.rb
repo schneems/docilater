@@ -1,5 +1,6 @@
 require "awesome_print"
 require "progress_bar"
+require "text-table"
 
 def doFunction(function, file)
 	data = {}
@@ -58,6 +59,14 @@ def start
 	file = gets.strip
 	contents = File.open(file)
 	startLoop(getFunctions(contents), file)
+	tab = Text::Table.new
+	tab.head = ["Function", "Documented"]
+	tab.rows = []
+	functions = getFunctions(contents)
+	functions.length.times do |i|
+		tab.rows << [functions[i], "Yes"]
+	end
+	puts tab.to_s
 end
 
 def GetWelcome(name)
