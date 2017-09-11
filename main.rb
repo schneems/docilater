@@ -6,12 +6,12 @@ def doFunction(function, file)
 	split = function.split("(")
 	data["name"] = split[0]
 	puts "Please describe what " + function + " is for and what it does. Try to make it as short as possible as this will be part of the function's comments."
-	data["description"] = gets
+	data["description"] = gets.strip
 	inputs = {}
 	inputlist = function.split(/[(|)]/)[1].split(", ")
 	inputlist.length.times do |i|
 		puts "Please describe what the input " + inputlist[i] + " does in " + function + "."
-		inputs[inputlist[i]] = gets
+		inputs[inputlist[i]] = gets.strip
 	end
 	data["inputs"] = inputs
 	ap data
@@ -52,9 +52,9 @@ end
 
 def start
 	puts "What's your name? "
-	puts GetWelcome(gets)
+	puts GetWelcome(gets.strip)
 	puts "Enter the name of your Ruby file: "
-	file = gets
+	file = gets.strip
 	contents = File.open(file)
 	startLoop(getFunctions(contents), file)
 end
