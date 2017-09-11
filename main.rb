@@ -48,6 +48,7 @@ def getFunctions(code)
 			functions << words[i + 1]
 		end
 	end
+	return functions
 end
 
 def start
