@@ -2,7 +2,19 @@ require "awesome_print"
 require "progress_bar"
 
 def doFunction(function)
-	# not implemented
+	data = {}
+	split = function.split("(")
+	data["name"] = split[0]
+	puts "Please describe what " + function + " is for and what it does. Try to make it as short as possible as this will be part of the function's comments."
+	data["description"] = gets
+	inputs = {}
+	inputlist = function.split(/[(|)]/)[1].split(", ")
+	inputlist.length.times do |i|
+		puts "Please describe what the input " + inputlist[i] + " does in " + function + "."
+		inputs[inputlist[i]] = gets
+	end
+	data["inputs"] = inputs
+	ap data
 end
 
 def startLoop(functions)
