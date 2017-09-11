@@ -20,6 +20,7 @@ def getFunctions(code)
 		if words[i] == "def"
 			functions << words[i + 1]
 		end
+	end
 end
 
 def start
