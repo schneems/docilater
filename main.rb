@@ -57,7 +57,9 @@ def start
 	puts GetWelcome(gets.strip)
 	puts "Enter the name of your Ruby file: "
 	file = gets.strip
-	contents = File.open(file)
+	File.open(file) do |f|
+		contents = f.read
+	end
 	startLoop(getFunctions(contents), file)
 	tab = Text::Table.new
 	tab.head = ["Function", "Documented"]
