@@ -59,8 +59,8 @@ def start
 	file = gets.strip
 	File.open(file) do |f|
 		contents = f.read
+		startLoop(getFunctions(contents), file)
 	end
-	startLoop(getFunctions(contents), file)
 	tab = Text::Table.new
 	tab.head = ["Function", "Documented"]
 	tab.rows = []
@@ -74,3 +74,4 @@ end
 def GetWelcome(name)
 	return "Welcome to Docilater, " + name + "!"
 end	
+
