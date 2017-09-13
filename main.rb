@@ -57,8 +57,10 @@ def start
 	puts GetWelcome(gets.strip)
 	puts "Enter the name of your Ruby file: "
 	file = gets.strip
-	contents = File.open(file)
-	startLoop(getFunctions(contents), file)
+	File.open(file) do |f|
+		contents = f.read
+		startLoop(getFunctions(contents), file)
+	end
 	tab = Text::Table.new
 	tab.head = ["Function", "Documented"]
 	tab.rows = []
@@ -72,3 +74,4 @@ end
 def GetWelcome(name)
 	return "Welcome to Docilater, " + name + "!"
 end	
+
