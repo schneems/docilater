@@ -59,12 +59,12 @@ def start
 	file = gets.strip
 	File.open(file) do |f|
 		contents = f.read
-		startLoop(getFunctions(contents), file)
+		functions = getFunctions(contents)
 	end
+	startLoop(functions, file)
 	tab = Text::Table.new
 	tab.head = ["Function", "Documented"]
 	tab.rows = []
-	functions = getFunctions(contents)
 	functions.length.times do |i|
 		tab.rows << [functions[i], "Yes"]
 	end
