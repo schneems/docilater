@@ -17,3 +17,5 @@ Setting up Docilater is fairly easy to do. Simply follow the instructions below,
         ```
 2. Run start.rb. This will launch the program and guide you onwards.
 
+# Search
+Search Docilater's source files here: [OpenSearchServer](https://search.opensearchserver.net/search/StellarDoor5319/docilater?keywords=getFunctions&index=docs&query=main)
