@@ -3,7 +3,7 @@
 
 Creates code documentation for you.
 
-# Setup
+## Setup
 Setting up Docilater is fairly easy to do. Simply follow the instructions below, in order, and you'll be generating documentation in no time!
 
 1. Install all the required dependencies. Do this as shown below:
