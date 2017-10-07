@@ -1,5 +1,6 @@
 require "awesome_print"
 require "progress_bar"
+require "text-table"
 
 def doFunction(function, file)
 	data = {}
@@ -42,10 +43,10 @@ end
 
 def getFunctions(code)
 	functions = []
-	words = code.split(" ")
+	words = code.split(/(?<!,)\s/)
 	words.length.times do |i|
 		if words[i] == "def"
-			functions << words[i + 1]
+			functions << words[i + 1].strip
 		end
 	end
 	return functions
@@ -56,10 +57,21 @@ def start
 	puts GetWelcome(gets.strip)
 	puts "Enter the name of your Ruby file: "
 	file = gets.strip
-	contents = File.open(file)
-	startLoop(getFunctions(contents), file)
+	File.open(file) do |f|
+		contents = f.read
+		functions = getFunctions(contents)
+	end
+	startLoop(functions, file)
+	tab = Text::Table.new
+	tab.head = ["Function", "Documented"]
+	tab.rows = []
+	functions.length.times do |i|
+		tab.rows << [functions[i], "Yes"]
+	end
+	puts tab.to_s
 end
 
 def GetWelcome(name)
 	return "Welcome to Docilater, " + name + "!"
 end	
+

@@ -1,9 +1,10 @@
 # Docilater
 [![Known Vulnerabilities](https://snyk.io/test/github/stellardoor5319/docilater/badge.svg)](https://snyk.io/test/github/stellardoor5319/docilater)
+[![Coverage Status](https://coveralls.io/repos/github/StellarDoor5319/docilater/badge.svg?branch=master)](https://coveralls.io/github/StellarDoor5319/docilater?branch=master)
 
 Makes creating code docs easier for you.
 
-# Setup
+## Setup
 Setting up Docilater is fairly easy to do. Simply follow the instructions below, in order, and you'll be generating documentation in no time!
 
 1. Install all the required dependencies. Do this as shown below:
