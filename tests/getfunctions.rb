@@ -1,4 +1,8 @@
 require_relative "../main.rb"
+
+require "coveralls"
+Coveralls.wear!
+
 require "test/unit"
 
 class TestGetFunctions < Test::Unit::TestCase
