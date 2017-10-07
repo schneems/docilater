@@ -1,5 +1,6 @@
 # Docilater
 [![Known Vulnerabilities](https://snyk.io/test/github/stellardoor5319/docilater/badge.svg)](https://snyk.io/test/github/stellardoor5319/docilater)
+[![Coverage Status](https://coveralls.io/repos/github/StellarDoor5319/docilater/badge.svg?branch=master)](https://coveralls.io/github/StellarDoor5319/docilater?branch=master)
 
 Creates code documentation for you.
 
