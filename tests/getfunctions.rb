@@ -1,7 +1,9 @@
 require_relative "../main.rb"
 
 require "coveralls"
+require "codacy-coverage"
 Coveralls.wear!
+Codacy::Reporter.start
 
 require "test/unit"
 
