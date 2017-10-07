@@ -43,10 +43,10 @@ end
 
 def getFunctions(code)
 	functions = []
-	words = code.split(" ")
+	words = code.split(/(?<!,)\s/)
 	words.length.times do |i|
 		if words[i] == "def"
-			functions << words[i + 1]
+			functions << words[i + 1].strip
 		end
 	end
 	return functions
