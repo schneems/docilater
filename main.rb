@@ -60,15 +60,15 @@ def start
 	File.open(file) do |f|
 		contents = f.read
 		functions = getFunctions(contents)
+	        startLoop(functions, file)
+         	tab = Text::Table.new
+        	tab.head = ["Function", "Documented"]
+        	tab.rows = []
+        	functions.length.times do |i|
+        		tab.rows << [functions[i], "Yes"]
+        	end
+        	puts tab.to_s
 	end
-	startLoop(functions, file)
-	tab = Text::Table.new
-	tab.head = ["Function", "Documented"]
-	tab.rows = []
-	functions.length.times do |i|
-		tab.rows << [functions[i], "Yes"]
-	end
-	puts tab.to_s
 end
 
 def GetWelcome(name)
