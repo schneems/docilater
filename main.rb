@@ -89,6 +89,10 @@ def start
 	end
 end
 
+# Gets a welcome message for the user.
+#
+# @author StellarDoor5319
+# @param name [String] the user's name
 def GetWelcome(name)
 	return "Welcome to Docilater, " + name + "!"
 end	
