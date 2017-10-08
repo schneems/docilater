@@ -38,6 +38,11 @@ def doFunction(function, file)
 	end
 end
 
+# Loops through every function in a file, launching doFunction for them
+#
+# @author StellarDoor5319
+# @param functions [Array] list of all functions, provided by getFunctions
+# @param file [String] path to the file being processed, can be relative
 def startLoop(functions, file)
 	bar = ProgressBar.new(functions.length)
 	functions.length.times do |i|
