@@ -51,6 +51,10 @@ def startLoop(functions, file)
 	end
 end
 
+# Gets a list of all functions defined in the code, including their parameters.
+#
+# @author StellarDoor5319
+# @param code [String] the code to process
 def getFunctions(code)
 	functions = []
 	words = code.split(/(?<!,)\s/)
