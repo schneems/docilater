@@ -2,7 +2,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/stellardoor5319/docilater/badge.svg)](https://snyk.io/test/github/stellardoor5319/docilater)
 [![Coverage Status](https://coveralls.io/repos/github/StellarDoor5319/docilater/badge.svg?branch=master)](https://coveralls.io/github/StellarDoor5319/docilater?branch=master)
 
-Creates code documentation for you.
+Makes creating code documentation easier for you.
 
 ## Setup
 Setting up Docilater is fairly easy to do. Simply follow the instructions below, in order, and you'll be generating documentation in no time!
