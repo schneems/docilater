@@ -2,6 +2,8 @@ require "awesome_print"
 require "progress_bar"
 require "text-table"
 
+# Processes a single function's documentation.
+#
 # @author StellarDoor5319
 # @param function [String] the name of the function to be processed, with parenthesis and parameters
 # @param file [String] the path to the file being processed, can be relative
