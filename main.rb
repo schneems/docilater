@@ -66,6 +66,10 @@ def getFunctions(code)
 	return functions
 end
 
+# Runs the full program.
+#
+# @author StellarDoor5319
+# @note Call this function to run the program.
 def start
 	puts "What's your name? "
 	puts GetWelcome(gets.strip)
