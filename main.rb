@@ -30,7 +30,7 @@ def doFunction(function, file)
 	puts commentcode
 	File.open(file) do |f|
 		filecode = f.read
-        	splitup = filecode.spilt("def " + function)
+        	splitup = filecode.split("def " + function)
 	        finalcode = splitup[0] + "def " + function + "\n" + commentcode + splitup[1]
          	File.open(file, "w") do |f|
 	        	f.write finalcode
