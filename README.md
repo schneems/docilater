@@ -5,6 +5,14 @@
 
 Makes creating code documentation easier for you.
 
+## Issues & Pull Requests
+| Stage | Count |
+| --- | --- |
+| Uncategorized | [![Waffle.io](https://badge.waffle.io/StellarDoor5319/docilater.svg?columns=inbox)](http://waffle.io/StellarDoor5319/docilater) |
+| Waiting | [![Waffle.io](https://badge.waffle.io/StellarDoor5319/docilater.svg?columns=backlog,next)](http://waffle.io/StellarDoor5319/docilater) |
+| Processing | [![Waffle.io](https://badge.waffle.io/StellarDoor5319/docilater.svg?columns=in%20progress,review)](http://waffle.io/StellarDoor5319/docilater) |
+| Complete | [![Waffle.io](https://badge.waffle.io/StellarDoor5319/docilater.svg?columns=done)](http://waffle.io/StellarDoor5319/docilater) |
+
 ## Setup
 Setting up Docilater is fairly easy to do. Simply follow the instructions below, in order, and you'll be generating documentation in no time!
 
