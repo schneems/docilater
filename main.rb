@@ -13,6 +13,30 @@ def doFunction(function, file)
 	data["name"] = split[0]
 	puts "Please describe what " + function + " is for and what it does. Try to make it as short as possible as this will be part of the function's comments."
 	data["description"] = gets.strip
+	hasanswer = false
+	while not hasanswer do
+	        puts "Does " + function + " return a value? [Y/n]"
+		ans = gets.strip
+		if ans == "Y" or ans == "y" or ans == "" then
+			hasanswer = true
+			answer = true
+		elsif ans == "N" or ans == "n" then
+			hasanswer = true
+			answer = false
+		else
+			puts "Invalid answer."
+		end
+	end
+	data["hasreturn"] = answer
+	if answer then
+		puts "What type of value (String, Boolean etc.) does " + function + " return?"
+		data["returntype"] = gets.strip
+		puts "What does " + function + " return, in general?"
+		data["returndesc"] = gets.strip
+	else
+		data["returntype"] = "Empty"
+		data["returndesc"] = "No return."
+	end
 	inputs = {}
 	inputtypes = {}
 	inputlist = function.split(/[(|)]/)[1].split(", ")
@@ -29,6 +53,9 @@ def doFunction(function, file)
 	commentcode = "# " + data["description"]
 	inputlist.length.times do |i|
 		commentcode += "\n# @param " + inputlist[i] + " [" + data["inputtypes"][inputlist[i]] + "] " + data["inputs"][inputlist[i]]
+	end
+	if data["hasreturn"] then
+	        commentcode += "\n# @return [" + data["returntype"] + "] " + data["returndesc"]
 	end
 	puts "Conversion complete. Comment content:"
 	puts commentcode
