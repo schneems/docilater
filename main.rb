@@ -14,17 +14,21 @@ def doFunction(function, file)
 	puts "Please describe what " + function + " is for and what it does. Try to make it as short as possible as this will be part of the function's comments."
 	data["description"] = gets.strip
 	inputs = {}
+	inputtypes = {}
 	inputlist = function.split(/[(|)]/)[1].split(", ")
 	inputlist.length.times do |i|
 		puts "Please describe what the input " + inputlist[i] + " does in " + function + "."
 		inputs[inputlist[i]] = gets.strip
+		puts  "Please name the correct input type (String, Boolean etc.) for the input " + inputlist[i] + " in function " + function + "."
+		inputtypes[inputlist[i]] = gets.strip
 	end
 	data["inputs"] = inputs
+	data["inputtypes"] = inputtypes
 	ap data
 	puts "Please wait, converting data into appropriate comments..."
 	commentcode = "# " + data["description"]
 	inputlist.length.times do |i|
-		commentcode += "\n# @param " + inputlist[i] + " " + data["inputs"][inputlist[i]]
+		commentcode += "\n# @param " + inputlist[i] + " [" + data["inputtypes"][inputlist[i]] + "] " + data["inputs"][inputlist[i]]
 	end
 	puts "Conversion complete. Comment content:"
 	puts commentcode
