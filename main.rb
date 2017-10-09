@@ -24,7 +24,7 @@ def doFunction(function, file)
 	puts "Please wait, converting data into appropriate comments..."
 	commentcode = "# " + data["description"]
 	inputlist.length.times do |i|
-		commentcode += "\n# " + inputlist[i] + " - " + data["inputs"][inputlist[i]]
+		commentcode += "\n# @param " + inputlist[i] + " " + data["inputs"][inputlist[i]]
 	end
 	puts "Conversion complete. Comment content:"
 	puts commentcode
