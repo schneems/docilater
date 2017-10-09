@@ -10,11 +10,11 @@ Setting up Docilater is fairly easy to do. Simply follow the instructions below,
 
 1. Install all the required dependencies. Do this as shown below:
     1. If you do not have [Bundler](bundler.io), install it using
-        ```Bash
+        ```
         sudo gem install bundler
         ```
     2. Install our dependencies using
-        ```Bash
+        ```
         bundler install
         ```
 2. Run start.rb. This will launch the program and guide you onwards.
