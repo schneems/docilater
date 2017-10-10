@@ -32,8 +32,8 @@ def doFunction(function, file)
 		filecode = f.read
         	splitup = filecode.split("def " + function)
 	        finalcode = splitup[0] + "def " + function + "\n" + commentcode + splitup[1]
-         	File.open(file, "w") do |f|
-	        	f.write finalcode
+         	File.open(file, "w") do |f2|
+	        	f2.write finalcode
 	        end
 	end
 end
