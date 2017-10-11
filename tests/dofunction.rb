@@ -8,8 +8,7 @@ Codacy::Reporter.start
 require "test/unit"
 
 class TestDoFunction < Test::Unit::TestCase
-
-	def test_doFunction
+  def test_doFunction
     code = "def is_even(number)\n  if number % 2 == 1\n    return false\n  else\n    return true\n  end\nend"
     resultCode = "def is_even(number)\n# Processes a single number, testing if it is equal\n# number - The number to process\n  if number % 2 == 1\n    return false\n  else\n    return true\n  end\nend"
 		with_stdin do |user|
