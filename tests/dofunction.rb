@@ -35,5 +35,4 @@ class TestDoFunction < Test::Unit::TestCase
     write.close # close the pipe
     $stdin = stdin # restore $stdin
   end
-  
 end
