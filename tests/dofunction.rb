@@ -11,7 +11,7 @@ class TestDoFunction < Test::Unit::TestCase
   def test_doFunction
     code = "def is_even(number)\n  if number % 2 == 1\n    return false\n  else\n    return true\n  end\nend"
     resultCode = "def is_even(number)\n# Processes a single number, testing if it is equal\n# number - The number to process\n  if number % 2 == 1\n    return false\n  else\n    return true\n  end\nend"
-		with_stdin do |user|
+    with_stdin do |user|
       File.open("test.rb", "w") do |testfl|
         testfl.puts code
       end
@@ -25,7 +25,7 @@ class TestDoFunction < Test::Unit::TestCase
       end
       assert_equal(resultCode, result)
     end
-	end
+  end
   
   def with_stdin
     stdin = $stdin # remember $stdin
