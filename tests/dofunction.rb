@@ -31,8 +31,8 @@ class TestDoFunction < Test::Unit::TestCase
     stdin = $stdin # remember $stdin
     $stdin, write = IO.pipe # create pipe, assigning its "read end" to $stdin
     yield write
-  ensure
-    write.close # close the pipe
-    $stdin = stdin # restore $stdin
+    ensure
+      write.close # close the pipe
+      $stdin = stdin # restore $stdin
   end
 end
