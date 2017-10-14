@@ -1,3 +1,8 @@
+require "rollbar"
+Rollbar.configure do |config|
+	config.access_token = "8b475dee5fca4f31bd6b60f8fb0b58f1"
+end
+
 require "awesome_print"
 require "progress_bar"
 require "text-table"
