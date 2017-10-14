@@ -48,10 +48,13 @@ def doFunction(function, file)
 	end
 	data["inputs"] = inputs
 	data["inputtypes"] = inputtypes
+	puts "Who defined " + function + " the most?"
+	data["author"] = gets.strip
 	ap data
 	puts "Please wait, converting data into appropriate comments..."
 	commentcode = "# " + data["description"]
 	commentcode += "\n# "
+	commentcode += "\n# @author " + data["author"]
 	inputlist.length.times do |i|
 		commentcode += "\n# @param " + inputlist[i] + " [" + data["inputtypes"][inputlist[i]] + "] " + data["inputs"][inputlist[i]]
 	end
