@@ -3,6 +3,17 @@
 [![Coverage Status](https://coveralls.io/repos/github/StellarDoor5319/docilater/badge.svg?branch=master)](https://coveralls.io/github/StellarDoor5319/docilater?branch=master)
 [![Inline docs](http://inch-ci.org/github/StellarDoor5319/docilater.svg?branch=master)](http://inch-ci.org/github/StellarDoor5319/docilater)
 
+[![Github All Releases (Downloads)](https://img.shields.io/github/downloads/StellarDoor5319/docilater/total.svg?label=GitHub%20downloads)](https://github.com/StellarDoor5319/docilater/releases)
+![GitHub contributors](https://img.shields.io/github/contributors/StellarDoor5319/docilater.svg)
+![GitHub release](https://img.shields.io/github/release/StellarDoor5319/docilater.svg?label=stable%20version)
+![GitHub (pre-)release](https://img.shields.io/github/release/StellarDoor5319/docilater/all.svg?label=latest%20version)
+![GitHub commits](https://img.shields.io/github/commits-since/StellarDoor5319/docilater/v1.0.svg)
+![Github commits (since latest release)](https://img.shields.io/github/commits-since/StellarDoor5319/docilater/latest.svg?label=unreleased%20commits)
+![Github search hit counter](https://img.shields.io/github/search/StellarDoor5319/docilater/goto.svg?label=search%20hits)
+![GitHub commit activity the past week](https://img.shields.io/github/commit-activity/w/StellarDoor5319/docilater.svg)
+![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/StellarDoor5319/docilater.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/StellarDoor5319/docilater.svg)
+
 Makes creating code documentation easier for you.
 
 ## Issues & Pull Requests
