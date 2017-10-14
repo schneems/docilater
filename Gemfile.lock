@@ -13,10 +13,14 @@ GEM
     docile (1.1.5)
     highline (1.7.8)
     json (2.1.0)
+    multi_json (1.12.2)
+    oj (2.12.14)
     options (2.3.2)
     progress_bar (1.1.0)
       highline (~> 1.6)
       options (~> 2.3.0)
+    rollbar (2.15.4)
+      multi_json
     simplecov (0.14.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -35,7 +39,9 @@ DEPENDENCIES
   awesome_print
   codacy-coverage
   coveralls
+  oj (~> 2.12.14)
   progress_bar
+  rollbar
   text-table
 
 BUNDLED WITH
