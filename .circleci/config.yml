@@ -6,6 +6,7 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
+      - run: sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev
       - run: sudo gem install bundler
       - run: bundler install
       - run: ruby tests/doall.rb
