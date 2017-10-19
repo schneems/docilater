@@ -27,7 +27,8 @@ Makes creating code documentation easier for you.
 ## Setup
 Setting up Docilater is fairly easy to do. Simply follow the instructions below, in order, and you'll be generating documentation in no time!
 
-1. Install all the required dependencies. Do this as shown below:
+1. Clone the git repository.
+2. Install all the required dependencies. Do this as shown below:
     1. If you do not have [Bundler](bundler.io), install it using
         ```
         sudo gem install bundler
@@ -36,7 +37,19 @@ Setting up Docilater is fairly easy to do. Simply follow the instructions below,
         ```
         bundler install
         ```
-2. Run start.rb. This will launch the program and guide you onwards.
+3. Run the program as described in the [launching the program](#Launching) section. This will launch the program and guide you onwards.
+
+# Launching
+It is a simple process to start Docilater.
+
+1. Open a terminal, or connect via SSH.
+2. Change your current directory to where you cloned the repository. The folder will be named "docilater" by default.
+3. Run the following command:
+    ```
+    ruby start.rb
+    ```
+
+You will now be greeted with a screen asking for your name. Simply enter your first name, it is not saved anywhere and is only used to greet you and speak to you throughout the program. Now, you will be asked to enter where your Ruby code is stored. Enter this and complete the questions presented by the program - the answers will be automatically translated into YARD comments.
 
 # Search
 Search Docilater's source files here: [OpenSearchServer](https://search.opensearchserver.net/search/StellarDoor5319/docilater)
