@@ -10,7 +10,8 @@
 
 ## Possible Solution
 <!--- Not obligatory, but suggest a fix/reason for the bug, -->
-<!--- or ideas how to implement the addition or change -->
+<!--- or ideas how to implement the addition or change. -->
+<!--- If providing it in steps, use a task list (- [] ) -->
 
 ## Steps to Reproduce (for bugs)
 <!--- Provide a link to a live example, or an unambiguous set of steps to -->
