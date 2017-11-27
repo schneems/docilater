@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.8.0)
-    codacy-coverage (1.1.7)
+    codacy-coverage (1.1.8)
       simplecov
     coveralls (0.8.21)
       json (>= 1.8, < 3)
@@ -33,7 +33,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print (= 1.8.0)
-  codacy-coverage (= 1.1.7)
+  codacy-coverage (= 1.1.8)
   coveralls (= 0.8.21)
   progress_bar (= 1.0.0)
   text-table (= 1.2.4)
