@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.8.0)
-    codacy-coverage (1.1.8)
+    codacy-coverage (1.1.7)
       simplecov
     coveralls (0.8.21)
       json (>= 1.8, < 3)
@@ -11,11 +11,11 @@ GEM
       thor (~> 0.19.4)
       tins (~> 1.6)
     docile (1.1.5)
-    highline (1.7.8)
+    highline (1.6.21)
     json (2.1.0)
     options (2.3.2)
-    progress_bar (1.1.0)
-      highline (~> 1.6)
+    progress_bar (1.0.0)
+      highline (~> 1.6.1)
       options (~> 2.3.0)
     simplecov (0.14.1)
       docile (~> 1.1.0)
@@ -32,11 +32,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  awesome_print
-  codacy-coverage
-  coveralls
-  progress_bar
-  text-table
+  awesome_print (= 1.8.0)
+  codacy-coverage (= 1.1.7)
+  coveralls (= 0.8.21)
+  progress_bar (= 1.0.0)
+  text-table (= 1.2.4)
 
 BUNDLED WITH
    1.16.0.pre.2
